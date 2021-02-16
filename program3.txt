@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct emp
+{
+    char eno[10];
+    char ename[10];
+    char emob[23];
+};
+void  main()
+{
+    struct emp e[3];
+    printf("enter eno,ename,emob of three employees\n ");
+    for(int i=0;i<3;i++)
+    {
+    scanf("%s",e[i].eno);
+    scanf("%s",e[i].ename);
+    scanf("%s",e[i].emob);
+    
+    }
+    for(int i=0;i<3;i++)
+    {
+    printf("%s\t",e[i].eno);
+    printf("%s\t",e[i].ename);
+    printf("%s\t",e[i].emob);
+    
+    }
+    return 0;
+}
