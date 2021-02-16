@@ -1,0 +1,62 @@
+#include <stdio.h>
+struct emp
+{
+    char eno[10];
+    char ename[10];
+    char emob[10];
+};
+int  main()
+{
+    struct emp e[3];
+    char eno[10];int flag=0;int sindex=0;char ename[10];
+    printf("enter eno,ename,emob of three employees\n ");
+    for(int i=0;i<3;i++)
+    {
+        scanf("%s",e[i].eno);
+    scanf("%s",e[i].ename);
+    scanf("%s",e[i].emob);
+    
+    }
+    for(int i=0;i<3;i++)
+    {
+    printf("%s\t",e[i].eno);
+    printf("%s\t",e[i].ename);
+    printf("%s\t",e[i].emob);
+    
+    }
+    printf("enter employee eno");
+    scanf("%s",eno);
+    for(int i=0;i<3;i++)
+    {
+        if (strcmp(eno,e[i].eno)==0)
+        {
+            flag=1;sindex=i;
+            printf("enter new enp and ename");
+            scanf("%s",eno);
+            printf("%s\t",e[i].eno);
+            printf("%s\t",e[i].ename);
+            printf("%s\n",e[i].emob);
+        }
+    }
+  printf("enter employee id");
+  scanf("%s',eno");
+  {
+     if(strcmp(eno,e[i].eno)==0)
+     flag=1;sindex=i;
+     printf("enter new eno and ename");
+     scanf("%s",eno);
+     scanf("%s",ename);
+     strcpy(eno,e[i].eno);
+     strcpy(ename.e[i].name);
+     break;
+  }
+  if(flag==1)
+  {
+      printf("employee details updated");
+  }
+  else
+  {
+      printf("employee not found");
+  }
+}
+ 
