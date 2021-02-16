@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+
+int a=20;
+void func(){
+    printf("%d",a);//Global intialization of variabls
+}
+void main(){
+    printf("before\n");
+    func();
+    printf("after\n");
+    a=2;
+    func();
+}
