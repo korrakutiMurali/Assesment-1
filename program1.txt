@@ -1,0 +1,20 @@
+#include <stdio.h>
+void staticdemo();
+int main()
+{
+    
+    printf("using while loop\n");
+    int i=0;
+    while(i<4)
+    {
+        staticdemo();
+        i=i+4;
+    }    
+    return 0;
+}
+void staticdemo()
+{
+     static int a;
+     a=a+4;
+    printf("%d",a);
+}
